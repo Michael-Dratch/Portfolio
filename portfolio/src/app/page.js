@@ -1,6 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import projects from "@/data/projects.json";
+import workItems from "@/data/workitems.json";
 import Project from "@/components/project";
+import WorkItem from "@/components/workitem";
+import EmailIcon from "@/components/emailicon";
+import LinkedinIcon from "@/components/linkedinicon";
 export default function Home() {
   return (
     <div className="px-8">
@@ -17,6 +20,10 @@ export default function Home() {
             businesses make a bigger impact.
           </p>
         </div>
+        <div className="mt-4 flex gap-4">
+          <EmailIcon></EmailIcon>
+          <LinkedinIcon></LinkedinIcon>
+        </div>
       </div>
       <div className="pt-20">
         <p className="pt-8 text-light">
@@ -29,13 +36,18 @@ export default function Home() {
           Ready to make something amazing together? Let’s connect and turn your
           ideas into reality!
         </p>
-        <h2 className="font-bold pt-20">Projects</h2>
-        <div className="flex flex-col gap-8">
+        <h2 className="font-bold pt-20 text-cyan-800">Projects</h2>
+        <div className="mt-4 flex flex-col gap-8">
           {projects.map((item) => {
             return <Project data={item}></Project>;
           })}
         </div>
-        <h2 className="font-bold pt-20">Work Experience</h2>
+        <h2 className="font-bold pt-20 text-cyan-800">Work Experience</h2>
+        <div className="mt-4 mb-12 flex flex-col gap-8">
+          {workItems.map((item) => {
+            return <WorkItem data={item}></WorkItem>;
+          })}
+        </div>
       </div>
     </div>
   );

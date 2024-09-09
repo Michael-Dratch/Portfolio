@@ -2,13 +2,15 @@
   {
     "title": "HJS Online Store",
     "description": "An online store for a Philadelphia-based collage artist, focusing on clean, modern design and responsive layouts. The site integrates stripe to enable online sales and simple product management.",
-    "imgUrl": "/images/hjsscreenshot.png",
-    "technologies": ["React", "Next.js", "Google Cloud", "Stripe"]
+    "imgUrl": "/images/hjsscreenshot2.png",
+    "technologies": ["React", "Next.js", "Google Cloud", "Stripe"],
+    "link": "http://hjscollages.com"
   },
   {
     "title": "Philly Bike Oracle",
-    "description": "Developed a custom website for a local bike repair business, featuring custom fonts, bold colors, and a DIY design ascetic that communicate the business’ unique character. Used Next.js Static Site Generation to create a fast, responsive, and efficient static site for a great user experience.",
-    "imgUrl": "/images/oraclescreenshot.png",
-    "technologies": ["React", "Next.js", "Google Cloud"]
+    "description": "A custom website for a local bike repair business, featuring custom fonts, bold colors, and a DIY design ascetic that communicate the business’ unique character. Used Next.js Static Site Generation to create a fast, responsive, and efficient static site for a great user experience.",
+    "imgUrl": "/images/oraclescreenshot2.png",
+    "technologies": ["React", "Next.js", "Google Cloud"],
+    "link": "http://phillybikeoracle.com"
   }
 ]

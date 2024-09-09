@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Software Developer - PwC (Contract)",
+    "date": "2023-Present",
+    "description": "Worked with a team of developers to build and maintain a suite of web applications used to automate work flows using generative AI. I built UI features with React and JavaScript as well as automated pipelines for testing and maintenance using Azure functions and Microsoft Power Automate.",
+    "technologies": [
+      "JavaScript",
+      "React",
+      "Azure Functions",
+      "Python",
+      "Microsoft Power Automate"
+    ]
+  },
+  {
+    "title": "Software Developer - Spence Locomotion Labs",
+    "date": "2022-2023",
+    "description": "Collaborated with lab technicians to Designed and build an application to automate and standardize data input for an animal movement research project.",
+    "technologies": ["Python", "SQLite", "PyTest"]
+  }
+]
