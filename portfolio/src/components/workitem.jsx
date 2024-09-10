@@ -12,8 +12,8 @@ export default function WorkItem({ data }) {
         <h1 className="font-semibold text-slate-800">{title}</h1>
         <p className="text-sm  text-slate-700">{description}</p>
         <div className="flex flex-wrap gap-1">
-          {technologies.map((item) => {
-            return <Tag text={item}></Tag>;
+          {technologies.map((item, index) => {
+            return <Tag key={index} text={item}></Tag>;
           })}
         </div>
       </div>

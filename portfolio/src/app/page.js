@@ -120,6 +120,17 @@ export default function Home() {
             })}
           </div>
         </section>
+        <section className="flex justify-center">
+          <span className="pb-12 text-sm">
+            <span>Contact me at&nbsp;</span>
+            <a
+              className="font-bold text-slate-700 hover:text-cyan-500"
+              href="mailto:michael.s.dratch@gmail.com"
+            >
+              michael.s.dratch@gmail.com
+            </a>
+          </span>
+        </section>
       </div>
     </div>
   );
