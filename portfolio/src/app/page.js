@@ -95,28 +95,28 @@ export default function Home() {
         <section ref={welcomeRef} id="welcome" className="scroll-mt-28">
           <p className="text-light">
             <span className="font-bold text-cyan-800">Welcome to my site!</span>{" "}
-            I’m a Fullstack Web Developer specializing in creating dynamic and
-            engaging websites. From clean and interactive sites to powerful
+            I&apos;m a fullstack web developer specializing in creating dynamic
+            and engaging websites. From clean and interactive sites to powerful
             business applications, I use the latest tools to bring your vision
-            to life. Whether you're running a business or working on a community
-            project, a tailored web solution can extend your reach and enhance
-            your impact. Ready to make something amazing together? Let’s connect
-            and turn your ideas into reality!
+            to life. Whether you&apos;re running a business or working on a
+            community project, a tailored web solution can extend your reach and
+            enhance your impact. Ready to make something amazing together?
+            Let&apos;s connect and turn your ideas into reality!
           </p>
         </section>
         <section ref={projectsRef} id="projects" className="scroll-mt-28">
           <h2 className="font-bold pt-20 text-cyan-800">Projects</h2>
           <div className="mt-4 flex flex-col gap-8">
-            {projects.map((item) => {
-              return <Project data={item}></Project>;
+            {projects.map((item, index) => {
+              return <Project key={index} data={item}></Project>;
             })}
           </div>
         </section>
         <section ref={workExperienceRef} id="workexperience">
           <h2 className="font-bold pt-20 text-cyan-800">Work Experience</h2>
           <div className="mt-4 mb-12 flex flex-col gap-8">
-            {workItems.map((item) => {
-              return <WorkItem data={item}></WorkItem>;
+            {workItems.map((item, index) => {
+              return <WorkItem key={index} data={item}></WorkItem>;
             })}
           </div>
         </section>
