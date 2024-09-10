@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="w-full p-8 bg-slate-100">
+    <div className="w-full p-8 bg-slate-100 lg:px-28">
       Contact me at{" "}
       <a
         className="font-bold text-slate-700 hover:text-cyan-500"
