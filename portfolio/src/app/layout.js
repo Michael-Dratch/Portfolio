@@ -10,6 +10,12 @@ config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata = {
+  title: "Michael Dratch",
+  description:
+    "Still trying to figure out how everything works under the hood.",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
