@@ -1,7 +1,13 @@
 [
   {
+    "title": "Software Developer - Pariveda Solutions",
+    "date": "2024-Present",
+    "description": "Contributed to the development and maintenance of a Java Spring application used by tens of thousands of users nationwide. I designed and implemented backend features and data pipeline enhancements, built and maintained AWS infrastructure with CloudFormation, and led performance testing efforts to ensure system reliability during peak traffic events.",
+    "technologies": ["Java", "Spring", "Oracle", "AWS", "Splunk"]
+  },
+  {
     "title": "Software Developer - PwC (Contract)",
-    "date": "2023-Present",
+    "date": "2023-2024",
     "description": "Worked with a team of developers to build and maintain a suite of web applications used to automate work flows using generative AI. I built UI features with React and JavaScript as well as automated pipelines for testing and maintenance using Azure functions and Microsoft Power Automate.",
     "technologies": [
       "JavaScript",

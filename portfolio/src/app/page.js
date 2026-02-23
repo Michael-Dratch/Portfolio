@@ -40,17 +40,16 @@ export default function Home() {
   };
 
   return (
-    <div className="px-8 grid lg:grid-cols-2 lg:px-28">
+    <div className="mx-auto px-8 grid lg:grid-cols-2 lg:px-28 lg:max-w-screen-xl">
       <div className="">
         <div className="pt-12 lg:py-28 lg:sticky lg:top-0 flex flex-col lg:justify-between lg:h-full lg:max-h-screen gap-3">
           <div className="flex flex-col gap-3">
             <h1 className="font-bold text-4xl text-accent">Michael Dratch</h1>
             <p className="font-semibold text-lg text-accent">
-              Fullstack Software Developer
+              Software Engineer
             </p>
             <p className="max-w-[300px] text-dark">
-              I build engaging websites and powerful online tools to help
-              businesses make a bigger impact.
+              Still trying to figure out how everything works under the hood.
             </p>
             <ul className="my-8 hidden lg:block">
               <li className="mt-4">
@@ -94,29 +93,34 @@ export default function Home() {
       <div className="pt-20 lg:pt-28">
         <section ref={welcomeRef} id="welcome" className="scroll-mt-28">
           <p className="text-light">
-            <span className="font-bold text-cyan-800">Welcome to my site!</span>{" "}
-            I&apos;m a fullstack web developer specializing in creating dynamic
-            and engaging websites. From clean and interactive sites to powerful
-            business applications, I use the latest tools to bring your vision
-            to life. Whether you&apos;re running a business or working on a
-            community project, a tailored web solution can extend your reach and
-            enhance your impact. Ready to make something amazing together?
-            Let&apos;s connect and turn your ideas into reality!
+            <span className="font-bold text-cyan-800">Three years in</span> and
+            I've worked across the stack: React frontends, Java backends, CI/CD
+            pipelines, performance testing, and security. I've learned a lot,
+            but somehow, I'm still asking the same questions. What should I name
+            this? How should I test this? How do I fit these two things
+            together? While seemingly simple, the problems of software design
+            keep growing and deepening the more I learn, and honestly, that's
+            what keeps me hooked. The questions never go away, they just get
+            more interesting.
           </p>
         </section>
-        <section ref={projectsRef} id="projects" className="scroll-mt-28">
-          <h2 className="font-bold pt-20 text-cyan-800">Projects</h2>
+        <section
+          ref={workExperienceRef}
+          id="workexperience"
+          className="scroll-mt-28"
+        >
+          <h2 className="font-bold pt-20 text-cyan-800">Work Experience</h2>
           <div className="mt-4 flex flex-col gap-8">
-            {projects.map((item, index) => {
-              return <Project key={index} data={item}></Project>;
+            {workItems.map((item, index) => {
+              return <WorkItem key={index} data={item}></WorkItem>;
             })}
           </div>
         </section>
-        <section ref={workExperienceRef} id="workexperience">
-          <h2 className="font-bold pt-20 text-cyan-800">Work Experience</h2>
+        <section ref={projectsRef} id="projects">
+          <h2 className="font-bold pt-20 text-cyan-800">Projects</h2>
           <div className="mt-4 mb-12 flex flex-col gap-8">
-            {workItems.map((item, index) => {
-              return <WorkItem key={index} data={item}></WorkItem>;
+            {projects.map((item, index) => {
+              return <Project key={index} data={item}></Project>;
             })}
           </div>
         </section>
