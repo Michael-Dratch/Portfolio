@@ -64,16 +64,6 @@ export default function Home() {
               </li>
               <li className="mt-4">
                 <a
-                  href="#projects"
-                  className={`${
-                    activeSection == 1 ? "active-nav" : "text-slate-500"
-                  } text-sm font-bold hover:text-cyan-600 transition-all duration-200 relative left-0`}
-                >
-                  Projects
-                </a>
-              </li>
-              <li className="mt-4">
-                <a
                   href="#workexperience"
                   className={`${
                     activeSection == 2 ? "active-nav" : "text-slate-500"
@@ -82,6 +72,16 @@ export default function Home() {
                   Experience
                 </a>
               </li>
+              {/* <li className="mt-4">
+                <a
+                  href="#projects"
+                  className={`${
+                    activeSection == 1 ? "active-nav" : "text-slate-500"
+                  } text-sm font-bold hover:text-cyan-600 transition-all duration-200 relative left-0`}
+                >
+                  Projects
+                </a>
+              </li> */}
             </ul>
           </div>
           <div className="mt-3 flex gap-4 lg:gap-6">
@@ -94,14 +94,14 @@ export default function Home() {
         <section ref={welcomeRef} id="welcome" className="scroll-mt-28">
           <p className="text-light">
             <span className="font-bold text-cyan-800">Three years in</span> and
-            I've worked across the stack: React frontends, Java backends, CI/CD
-            pipelines, performance testing, and security. I've learned a lot,
-            but somehow, I'm still asking the same questions. What should I name
-            this? How should I test this? How do I fit these two things
-            together? While seemingly simple, the problems of software design
-            keep growing and deepening the more I learn, and honestly, that's
-            what keeps me hooked. The questions never go away, they just get
-            more interesting.
+            I&apos;ve worked across the stack: React frontends, Java backends,
+            CI/CD pipelines, performance testing, and security. I&apos;ve
+            learned a lot, but somehow, I&apos;m still asking the same
+            questions. What should I name this? How should I test this? How do I
+            fit these two things together? While seemingly simple, the problems
+            of software design keep growing and deepening the more I learn, and
+            honestly, that&apos;s what keeps me hooked. The questions never go
+            away, they just get more interesting.
           </p>
         </section>
         <section
@@ -110,20 +110,20 @@ export default function Home() {
           className="scroll-mt-28"
         >
           <h2 className="font-bold pt-20 text-cyan-800">Work Experience</h2>
-          <div className="mt-4 flex flex-col gap-8">
+          <div className="mt-4 mb-12 flex flex-col gap-8">
             {workItems.map((item, index) => {
               return <WorkItem key={index} data={item}></WorkItem>;
             })}
           </div>
         </section>
-        <section ref={projectsRef} id="projects">
+        {/* <section ref={projectsRef} id="projects">
           <h2 className="font-bold pt-20 text-cyan-800">Projects</h2>
           <div className="mt-4 mb-12 flex flex-col gap-8">
             {projects.map((item, index) => {
               return <Project key={index} data={item}></Project>;
             })}
           </div>
-        </section>
+        </section> */}
         <section className="flex justify-center">
           <span className="pb-12 text-sm">
             <span>Contact me at&nbsp;</span>
